@@ -17,6 +17,12 @@ module.exports = function (api) {
             '.ios.tsx',
           ],
           root: ['.'],
+          alias: {
+            pages: "./src/pages",
+            styles: "./src/styles",
+            assets: "./src/assets",
+            components: "./src/components",
+          },
         },
       ],
     ],

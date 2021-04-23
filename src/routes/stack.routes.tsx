@@ -1,6 +1,6 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
-import { UserIdentification, Welcome } from 'pages'
+import { PlantSelect, UserIdentification, Welcome } from 'pages'
 
 const stackRoutes = createStackNavigator()
 
@@ -21,6 +21,7 @@ const StackRoutes: React.FC = () => {
         name="UserIdentification"
         component={UserIdentification}
       />
+      <stackRoutes.Screen name="PlantSelect" component={PlantSelect} />
     </stackRoutes.Navigator>
   )
 }

@@ -1,10 +1,19 @@
 import styled from 'styled-components'
-import { SafeAreaView } from 'react-native'
+import { View, SafeAreaView, KeyboardAvoidingView } from 'react-native'
 
 export const Container = styled(SafeAreaView)`
   flex: 1;
-  width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 24px 48px;
+`
+
+export const ButtonArea = styled(View)`
+  padding: 0 16px;
+  margin-top: 48px;
+`
+
+export const KeyboardContainer = styled(KeyboardAvoidingView)`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 `

@@ -9,7 +9,7 @@ interface PrimaryButtonProps extends TouchableOpacityProps {
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({ text, ...rest }) => {
   return (
     <Button activeOpacity={0.8} {...rest}>
-      <Text>{text}</Text>
+      <Text style={{ color: '#fff', fontSize: 14 }}>{text}</Text>
     </Button>
   )
 }

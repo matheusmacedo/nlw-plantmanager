@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { SafeAreaView } from 'react-native'
 
 export const Container = styled(SafeAreaView)`
-  display: flex;
+  flex: 1;
   align-items: center;
   justify-content: space-around;
-  padding: 0 24px;
+  padding: 48px 24px;
 `

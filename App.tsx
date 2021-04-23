@@ -1,14 +1,11 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
-import { UserIdentification, Welcome } from 'pages'
 import {
   useFonts,
   Jost_400Regular,
   Jost_600SemiBold,
 } from '@expo-google-fonts/jost'
 import AppLoading from 'expo-app-loading'
-
-import { StatusBar } from 'expo-status-bar'
+import Routes from 'src/routes'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -19,22 +16,6 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />
   } else {
-    return (
-      <View style={styles.container}>
-        {/* <Welcome /> */}
-        <UserIdentification />
-        <StatusBar style="auto" />
-      </View>
-    )
+    return <Routes />
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontFamily: 'Jost_400Regular',
-  },
-})
